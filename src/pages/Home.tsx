@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/Button";
 import { SITE_INFO, INTAKE_SCHEDULE } from "@/data/constants";
 
-import heroImage from "@/assets/images/regenerated_image_1777834456002.png";
-
 export function Home() {
   return (
     <div className="flex flex-col w-full pb-20 md:pb-0">
@@ -13,7 +11,7 @@ export function Home() {
            <div className="hidden md:block bg-sand-100"></div>
            <div className="w-full h-full">
              <img 
-               src={heroImage}
+               src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2600&auto=format&fit=crop" 
                alt="Elegant boutique interior" 
                className="w-full h-full object-cover rounded-l-[120px] shadow-2xl"
              />
