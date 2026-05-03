@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-sand-50: #FFFFFF;
+  --color-sand-100: #FDFBF7; /* warm white / cream */
+  --color-sand-200: #F4F1EA; /* soft beige */
+  --color-sand-300: #EBE8E0; /* subtle border taupe */
+  --color-sage-100: #E8F0F3; /* pale brand highlight */
+  --color-sage-200: #8E979B; /* medium gray */
+  --color-charcoal: #2C3539; /* soft charcoal, not harsh black */
+  --color-brand-blue: #6f9fb3;
+  --color-brand-dark: #4A7A8E; /* darker rich version for CTAs */
+  --color-muted-gold: #C5A880; /* for badges */
+  --color-text-medium: #5A6266;
+  --color-text-light: #8E979B;
+
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Playfair Display", "Georgia", serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-sand-200);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
