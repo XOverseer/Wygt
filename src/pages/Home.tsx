@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/Button";
 import { SITE_INFO, INTAKE_SCHEDULE } from "@/data/constants";
-import womensApparelImg from "../assets/images/regenerated_image_1777834456002.png";
 
 export function Home() {
   return (
@@ -113,9 +112,9 @@ export function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Women's Apparel", desc: "Upscale fashion & contemporary styles", img: womensApparelImg },
+              { title: "Women's Apparel", desc: "Upscale fashion & contemporary styles", img: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=800&auto=format&fit=crop" },
               { title: "Jewelry", desc: "Unique, chunky & statement pieces", img: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=800&auto=format&fit=crop" },
-              { title: "Handbags & Accessories", desc: "High-end authentic designer goods", img: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?q=80&w=800&auto=format&fit=crop" },
+              { title: "Handbags & Accessories", desc: "High-end authentic designer goods", img: "https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=800&auto=format&fit=crop" },
               { title: "Home Furnishings", desc: "Distinctive decor & quality furniture", img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop" }
             ].map((cat) => (
               <div key={cat.title} className="group cursor-pointer">
