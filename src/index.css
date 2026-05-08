@@ -1,35 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-sand-50: #FFFFFF;
-  --color-sand-100: #FDFBF7; /* warm white / cream */
-  --color-sand-200: #F4F1EA; /* soft beige */
-  --color-sand-300: #EBE8E0; /* subtle border taupe */
-  --color-sage-100: #E8F0F3; /* pale brand highlight */
-  --color-sage-200: #8E979B; /* medium gray */
-  --color-charcoal: #2C3539; /* soft charcoal, not harsh black */
-  --color-brand-blue: #6f9fb3;
-  --color-brand-dark: #4A7A8E; /* darker rich version for CTAs */
-  --color-muted-gold: #C5A880; /* for badges */
-  --color-text-medium: #5A6266;
-  --color-text-light: #8E979B;
+  /* Base palette */
+  --color-cream: #FAF8F4;
+  --color-cream-dark: #F0EAE0;
+  --color-sand: #E4DDD4;
+  --color-sand-mid: #D4CAC0;
+
+  /* Brand charcoal */
+  --color-charcoal: #1A2428;
+  --color-charcoal-mid: #2C393E;
+
+  /* Coastal teal (brand primary) */
+  --color-teal: #2D6B7E;
+  --color-teal-dark: #1D4F5E;
+  --color-teal-light: #5A9BAD;
+
+  /* Antique gold (accent) */
+  --color-gold: #C4923E;
+  --color-gold-light: #DDB87A;
+
+  /* Text colors */
+  --color-text: #2C393E;
+  --color-text-mid: #5A6570;
+  --color-text-soft: #8E979B;
 
   --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Playfair Display", "Georgia", serif;
 }
 
-body {
-  font-family: var(--font-sans);
-  background-color: var(--color-sand-200);
-  color: var(--color-charcoal);
-  -webkit-font-smoothing: antialiased;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .text-balance {
   text-wrap: balance;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sand-mid);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-teal-light);
 }
