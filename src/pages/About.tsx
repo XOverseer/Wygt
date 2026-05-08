@@ -23,7 +23,7 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=1200&auto=format&fit=crop"
+                src="https://raw.githubusercontent.com/XOverseer/Wygt/refs/heads/main/consign.png"
                 alt="Boutique owner"
                 className="w-full h-full object-cover"
               />
